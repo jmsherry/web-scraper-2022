@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "index.js",
+  "main": "scrape.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf ./scrapes/* && rimraf ./searches/* && rimraf *.log"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
-    "jsdom": "^20.0.0"
+    "jsdom": "^20.0.0",
+    "rimraf": "^3.0.2"
   }
 }
