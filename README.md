@@ -13,7 +13,7 @@ After we make the GET call with axios we can use JSDOM to create a mini-DOM from
 The URL is passed in as an environment variable, so you'd do:
 
 ```shell
-TARGET_URL='https://www.thejump.tech/' node scrape.js
+npx cross-env TARGET_URL='https://www.thejump.tech/' node scrape.js
 ```
 
 ### Finding
@@ -21,5 +21,5 @@ TARGET_URL='https://www.thejump.tech/' node scrape.js
 The URL is passed in as an environment variable, so you'd do:
 
 ```shell
-TARGET_URL='https://www.thejump.tech/' TARGET_TAG='h1' node find-tag.js
+npx cross-env TARGET_URL='https://www.thejump.tech/' TARGET_TAG='h1' node find-tag.js
 ```
