@@ -6,7 +6,7 @@ const URLS = [];
 
 const {
   TARGET_URL = "",
-  TARGET_DIR = "searches",
+  TARGET_DIR = "scrapes",
   LOG_FILE = "test.log",
 } = process.env;
 
